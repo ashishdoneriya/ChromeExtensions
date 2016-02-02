@@ -1,12 +1,31 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <script src='scripts/jquery-1.6.1.min.js'></script>
-    <script src="scripts/parse.js"></script>
-    <script src="scripts/fetch.js"></script>
-    <link rel="stylesheet" href="styles/post.css" type="text/css" />
-  </head>
+<head>
+	<script src='js/jquery-2.2.0.min.js'></script>
+	<script src="js/fetch.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/parse.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/kat.css" type="text/css" />
+	<link rel="stylesheet" href="css/post.css" type="text/css" />
+</head>
 
-  <body>
-    <div id="popup"></div>
-  </body>
+<body>
+	<div id="container" class="container">
+		<ul class="nav nav-tabs">
+			<li class="active">
+				<a data-toggle="tab" href="#movies">Movies</a>
+			</li>
+			<li>
+				<a data-toggle="tab" href="#episodes">Episodes</a>
+			</li>
+		</ul>
+		<div class="tab-content">
+			<div id="movies" class="tab-pane fade in active"><br></div>
+			<div id="episodes" class="tab-pane fade"><br></div>
+		</div>
+	</div>
+</body>
+
 </html>

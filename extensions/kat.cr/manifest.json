@@ -2,20 +2,20 @@
     "manifest_version": 2, 
     "name": "kat.cr", 
     "version": "0.1", 
-    "description": "Keep up with the latest from Lifehacker.", 
+    "description": "", 
     "icons": {
         "128": "icon.png"
     }, 
-    "homepage_url": "https://developer.chrome.com/extensions", 
+    "homepage_url": "http://kickasstorrent.proxy-index.com/", 
     "background": {
         "page": "background.html"
     }, 
     "permissions": [
-        "<all_urls>"
+        "http://kickasstorrent.proxy-index.com/*"
     ], 
     "browser_action": {
-        "default_icon": "images/icon.png", 
-        "default_title": "kat.cr", 
+        "default_icon": "icon.png", 
+        "default_title": "Torrents", 
         "default_popup": "popup.html"
     }
 }
