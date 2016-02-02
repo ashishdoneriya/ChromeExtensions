@@ -1,1 +1,1 @@
-# chromeExtensionWebsiteShortcut
+# chrome Extension, apps and shortcuts

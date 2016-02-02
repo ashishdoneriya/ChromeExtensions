@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2, 
+    "name": "kat.cr", 
+    "version": "0.1", 
+    "description": "Keep up with the latest from Lifehacker.", 
+    "icons": {
+        "128": "icon.png"
+    }, 
+    "homepage_url": "https://developer.chrome.com/extensions", 
+    "background": {
+        "page": "background.html"
+    }, 
+    "permissions": [
+        "<all_urls>"
+    ], 
+    "browser_action": {
+        "default_icon": "images/icon.png", 
+        "default_title": "kat.cr", 
+        "default_popup": "popup.html"
+    }
+}
