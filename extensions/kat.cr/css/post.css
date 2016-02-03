@@ -14,3 +14,6 @@ content:none;
 .ka-music-note::before, .markeredBlock.torType.musicType::before {
 content:none;
 }
+div.markeredBlock::before {
+	content:"";
+}

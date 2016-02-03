@@ -9,7 +9,7 @@
     "homepage_url": "http://kickasstorrent.proxy-index.com/", 
     "background": {
         "page": "background.html"
-    }, 
+    },
     "permissions": [
         "http://kickasstorrent.proxy-index.com/*"
     ], 
