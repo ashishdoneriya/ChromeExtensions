@@ -18,7 +18,6 @@ function displayHTML(htmlData) {
     divisions = el.getElementsByClassName("data frontPageWidget");
     for (var i = 0; i < divisions.length; i++) {
         createTable(divisions[i], container, tabsUL, tabsContentDIV);
-
     }
     tabsUL.firstChild.setAttribute('class', 'active');
     tabsContentDIV.firstChild.setAttribute('class', 'tab-pane fade in active');
@@ -29,6 +28,10 @@ function displayHTML(htmlData) {
 }
 
 function createTable(division, container, tabsUL, tabsContentDIV) {
+	var tableName = getTableName(division);
+	if (! (tableName == 'Movies Torrents' || tableName == 'TV Shows Torrents') ) {
+		return;
+	}
     var TRs = division.getElementsByTagName('tr');
     var columns;
     for (var i = 0; i < TRs.length; i++) {
@@ -44,11 +47,11 @@ function createTable(division, container, tabsUL, tabsContentDIV) {
     	row.removeChild(columns[2]);
     	row.removeChild(columns[1]);
     }
-    appendLiAndDiv(tabsUL, tabsContentDIV, division);
+    TRs[0].parentNode.removeChild(TRs[0]);
+    appendLiAndDiv(tabsUL, tabsContentDIV, division, tableName);
 }
 
-function appendLiAndDiv(tabsUL, tabsContentDIV, division) {
-    var tableName = getTableName(division);
+function appendLiAndDiv(tabsUL, tabsContentDIV, division, tableName) {
     var tableNameId = tableName.replace(/ /g,'');
     tabsUL.appendChild(getLI(tableName, tableNameId));
     tabsContentDIV.appendChild(getDiv(division, tableNameId));

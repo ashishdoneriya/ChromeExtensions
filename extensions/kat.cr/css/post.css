@@ -1,19 +1,13 @@
 .icommentjs {
-display:none;
+	display:none;
 }
 
 .markeredBlock{
-padding-left:0px;
+	padding-left:0px;
 }
 html{
-width:500px;
+	width:500px;
 }
-.markeredBlock.torType.filmType::before {
-content:none;
-}
-.ka-music-note::before, .markeredBlock.torType.musicType::before {
-content:none;
-}
-div.markeredBlock::before {
-	content:"";
+::before {
+	content: none !important;
 }
