@@ -11,3 +11,6 @@ html{
 ::before {
 	content: none !important;
 }
+ul#tabsUL {
+	font-weight: bold;
+}
